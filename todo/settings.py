@@ -48,7 +48,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'todo.middleware.filter_ip_middleware.FilterIPMiddleware'
+    'todo.middleware.filter_ip_middleware.FilterIPMiddleware',
+    'todo.middleware.delay_middleware.DelayMiddleware',
 ]
 
 ROOT_URLCONF = 'todo.urls'

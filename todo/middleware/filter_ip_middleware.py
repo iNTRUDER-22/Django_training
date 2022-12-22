@@ -10,7 +10,6 @@ class FilterIPMiddleware:
         ip = request.META.get('REMOTE_ADDR')
         if ip not in allowed_ips:
             raise PermissionDenied
-
         response = self.get_response(request)
 
         return response
