@@ -1,8 +1,12 @@
 <html>
 <ul>
-    <li><a href="/advertisement1">Мастер на час</a></li>
-    <li>Мастер на два часа</li>
-    <li>Мастер на три часа</li>
-    <li>Мастер на четыре часа</li>
+    {% for advertisement in advertisements %}
+        <li>{{ advertisement }}</li>
+    {% endfor %}
+    <li><a href = '/contacts'>Контакты</a></li>
+    <li><a href = '/about'>О нас</a></li>
+    <li><a href = '/categories'>Категории</a></li>
+    <li><a href = '/regions'>Регионы</a></li>
+    {{ip_address}}
 </ul>
 </html>
